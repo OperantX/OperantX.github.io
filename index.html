@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OperantX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="description" content="OperantX — Deploy. Deny. Exfil.">
+  <meta name="keywords" content="OperantX, OX, Operant, Operants, Deploy, Deny, Exfil">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="OperantX">
+  <meta property="og:description" content="OperantX — Deploy. Deny. Exfil.">
+  <meta property="og:image" content="https://operantx.com/logo.jpg">
+  <meta property="og:url" content="https://operantx.com">
+  <meta property="og:type" content="website">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Aldrich", sans-serif;
+      background: #efefef;
+      user-select: none;
+    }
+    #header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    #header>h1 {
+      color: #0a0a0a;
+      margin: 0;
+      margin-top: 9px;
+      font-size: 3rem;
+      letter-spacing: -0.05em
+    }
+    #header>img {
+      max-width: 100%;
+      height: 80px;
+    }
+    h2 {
+      margin-top: 0px;
+    }
+    #login {
+      font-family: "Aldrich", sans-serif;
+      background-color: black;
+      color: white;
+      font-size: 1.2rem;
+      padding: 6px 8px 4px 8px;
+      margin-bottom: 100px;
+    }
+    #social-note {
+      position: fixed;
+      left: 12px;
+      bottom: 12px;
+      font-family: "Aldrich", sans-serif;
+      color: #333;
+      font-size: 0.95rem;
+      opacity: 0.75;
+    }
+    #session-qr {
+      position: fixed;
+      right: 12px;
+      bottom: 12px;
+      font-family: "Aldrich", sans-serif;
+      color: #333;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      flex-direction: row;
+    }
+    #session-qr .label {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      white-space: nowrap;
+    }
+    #session-qr a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.85;
+    }
+    #session-qr a:hover {
+      color: #000;
+    }
+    #session-qr img {
+      width: 100px;
+      height: auto;
+      opacity: 1;
+    }
+    .blink {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50% {
+        opacity: 1;
+      }
+      51%, 100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <img src="logo.jpg" alt="Logo">
+    <h1>OperantX<span class="blink">_</span></h1>
+  </div>
+  <h2>Deploy. Deny. Exfil.</h2>
+  <div id="session-qr"><a href="https://getsession.org/" target="_blank"><span class="label">Session ID</span></a><img src="session-qr-code.png" alt="Session QR Code"></div>
+  <div id="social-note">No social media.<br />No flashy website.<br />Just hardcore service.</div>
+</body>
+</html>
